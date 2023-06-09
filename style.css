@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.home-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.bg_container {
+    height: 100%;
+    width: 100%;
+    background: url('./assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(1px);
+    position: absolute;
+}
+
+.inner-container {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 50vw;
+    z-index: 2;
+}
+
+.inner-container h1 span {
+    font-size: 2em;
+
+}
+
+.inner-container p {
+    font-size: 1.1rem !important;
+}
+
+.span2 {
+    font-weight: 300;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.input-box {
+    width: 70%;
+    background: whitesmoke;
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    padding: 10px;
+}
+
+.inner-container button {
+    width: 20%;
+}
+
+/* cards styling  */
+.item .card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-left: 0.8rem;
+}
+
+/* explore by business model  */
+.interested {
+    margin-top: 2rem !important;
+    padding: 2rem 0;
+    background: url('./assets/card_bg.jpg');
+}
+
+.item_card {
+    height: 14vh;
+    width: 24%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.item_card a {
+    color: black;
+    text-decoration: none;
+}
+
+.item_card:hover {
+    color: #fff;
+    background: tomato;
+}
+
+.footer {
+    background: url('./assets/card_bg.jpg');
+    min-height: 50vh;
+}
+
+.social-icons {
+    width: 40%;
+}
+
+.social-icons span i {
+    font-size: 1.2rem;
+    margin-left: 1.1rem;
+}
+
+.social-icons span i:hover {
+    color: rgb(255, 101, 74);
+    cursor: pointer;
+}
+
+.copy-right {
+    width: 40%;
+}
+
+.links p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.links p a:hover {
+    color: rgb(255, 101, 74);
+}
+
+/* for tablet  view media query  */
+@media screen and (min-width: 768px) {
+    .home-container {
+        height: 58vh;
+    }
+
+    .inner-container {
+        top: 30%;
+        left: 5%;
+        width: 70vw;
+    }
+
+    .item_card {
+        width: 32%;
+        padding: 10px;
+    }
+
+    .copy-right {
+        width: 50%;
+    }
+}
+
+/* mobile view media query  */
+@media screen and (max-width:427px) {
+    .home-container {
+        height: 100vh;
+    }
+
+    .inner-container {
+        top: 20%;
+        left: 4%;
+        width: 90%;
+    }
+
+    .inner-container h1 span {
+        font-size: 1.8em;
+
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input-box {
+        width: 65%;
+    }
+
+    .inner-container button {
+        width: 30%;
+    }
+
+    .owl-carousel {
+        padding-left: 2.5rem;
+
+    }
+
+    .item_card {
+        height: auto;
+        width: 45%;
+        padding: 15px;
+    }
+
+    .footer_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icons {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .social-icons span i {
+        margin-left: 1rem;
+    }
+
+    .copy-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copy-right p {
+        font-size: 14px;
+    }
+    .div-links{
+        margin-top: 2rem;
+    }
+
+}
